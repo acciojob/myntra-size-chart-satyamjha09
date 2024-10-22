@@ -1,2 +1,48 @@
 
-/* Your CSS Code here. */
+/* General table styling */
+table {
+    width: 50%;
+    border-collapse: collapse;
+    margin: 50px auto;
+    font-family: Arial, sans-serif;
+    table-layout: fixed;
+}
+
+thead {
+    background-color: #c21807; /* Darker red for the header */
+    color: white;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+thead th {
+    padding: 12px; /* Slightly more padding for header */
+}
+
+tbody .waist td {
+    background-color: #f1948a; /* Lighter red for the waist row */
+    color: white;
+}
+
+tbody .chest td {
+    background-color: #f8d7da; /* Light pink for chest row */
+    color: black;
+}
+
+tbody .sleeve td {
+    background-color: #e5e7e9; /* Light grey for sleeve row */
+    color: black;
+}
+
+tbody tr td:first-child {
+    font-weight: bold; /* Bold the first column for parts */
+}
+
+/* Adding hover effect for better interaction */
+tbody tr:hover {
+    background-color: #dcdcdc; /* Light gray on hover */
+}
